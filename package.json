@@ -1,0 +1,42 @@
+{
+  "name": "kayo-js",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rm -rf lib && node_modules/babel-cli/bin/babel.js src --out-dir lib --copy-files",
+    "test": "node_modules/mocha/bin/mocha test/*.test.js"
+  },
+  "author": "means88",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.13.1",
+    "expect": "^21.2.1",
+    "mocha": "^4.0.1"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0"
+  },
+  "babel": {
+    "presets": [
+      "stage-0",
+      "env"
+    ],
+    "plugins": [
+      "transform-class-properties",
+      "add-module-exports",
+      "transform-runtime"
+    ]
+  },
+  "files": [
+    "lib"
+  ]
+}
