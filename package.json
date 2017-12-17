@@ -1,6 +1,6 @@
 {
   "name": "kayo-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/index.js",
   "scripts": {
     "build": "rm -rf lib && node_modules/babel-cli/bin/babel.js src --out-dir lib --copy-files",
@@ -8,7 +8,7 @@
   },
   "author": "means88",
   "license": "MIT",
-  "description": "",
+  "description": "## Install ```sh npm install kayo-js ```",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
@@ -38,5 +38,21 @@
   },
   "files": [
     "lib"
-  ]
+  ],
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Means88/kayo-js.git"
+  },
+  "keywords": [
+    "async",
+    "task"
+  ],
+  "bugs": {
+    "url": "https://github.com/Means88/kayo-js/issues"
+  },
+  "homepage": "https://github.com/Means88/kayo-js#readme"
 }
